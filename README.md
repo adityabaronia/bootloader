@@ -25,7 +25,7 @@ There are different methods that can be used to decide which image to load:
       The logic signal is checked. If the signal is low, top of the stack is loaded and the program flow is transfered to bootloader main function. If the logic signal is high, the application reset vector is loaded and then executed.
 
 *Question: What happens ifthe bootloader is loaed in memory and has started execution.After that there is request to jump to the application?*
- Ans: To avoid this kind of situation bootloader should check whether the application rest vector exists or not.
+Ans: To avoid this kind of situation bootloader should check whether the application rest vector exists or not.
 
 2.  
 
