@@ -22,7 +22,11 @@ So, it is necessary that as a part of bootloader there is a braching algorithm t
 
 There are different methods that can be used to decide which image to load:
 1. **Use the GPIO lines to make the decision**. Example:- If the GPIO is high, load the application; if GPIO is low, load the bootloader.
-      The logic signal is checked. If the signal is low, top of the stack is loaded and the program flow is transfered to bootloader main function. If the logic signal is high, the application reset vector is loadedand then executed.
+      The logic signal is checked. If the signal is low, top of the stack is loaded and the program flow is transfered to bootloader main function. If the logic signal is high, the application reset vector is loaded and then executed.
+
+*Question: What happens ifthe bootloader is loaed in memory and has started execution.After that there is request to jump to the application?*
+ Ans: To avoid this kind of situation bootloader should check whether the application rest vector exists or not.
+
 2.  
 
 branching code is responsible for execution of bootloader
