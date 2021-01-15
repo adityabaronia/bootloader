@@ -4,7 +4,7 @@ Bootloader is a small application on flash that helps use to flash the main prog
 2. Firemware/Application
 
 Since the bootloader and the main firmware both are on same flash memory so the prograamer should keep in mind that bootloader's code should be precise and small.
-## Tyi[pical sequence for flashing a controller
+## Typical sequence for flashing a controller
 1. open image flashing tool
 2. Start the bootloader
 3. erase the flash
